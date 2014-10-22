@@ -13,26 +13,26 @@ __contact__ = "brs@nbic.nl"
 __copyright__ = "Copyright 2011, Netherlands Bioinformatics Centre"
 __license__ = "MIT"
 
-SOFTWARE_DIR = '/work/odosenl/software/'
+SOFTWARE_DIR = ''
 if getpass.getuser() == 'tbeek':
     SOFTWARE_DIR = '/data/projects/odosenl/software/'
 assert os.path.isdir(SOFTWARE_DIR), 'Software directory is missing'
 
 #Blast
-NCBI_BLAST_DIR = SOFTWARE_DIR + 'ncbi-blast-2.2.28+/bin/'
+NCBI_BLAST_DIR = SOFTWARE_DIR + ''
 MAKEBLASTDB = NCBI_BLAST_DIR + 'makeblastdb'
 BLASTP = NCBI_BLAST_DIR + 'blastp'
 BLASTN = NCBI_BLAST_DIR + 'blastn'
 
 #Life Science Grid Portal
-LSGP_BLAST_VERSION = '2.2.26'
-LSGP_MAKEBLASTDB = 'makeblastdb/' + LSGP_BLAST_VERSION
-LSGP_BLASTN = 'blastn/' + LSGP_BLAST_VERSION
-LSGP_BLASTP = 'blastp/' + LSGP_BLAST_VERSION
+#LSGP_BLAST_VERSION = '2.2.26'
+#LSGP_MAKEBLASTDB = 'makeblastdb/' + LSGP_BLAST_VERSION
+#LSGP_BLASTN = 'blastn/' + LSGP_BLAST_VERSION
+#LSGP_BLASTP = 'blastp/' + LSGP_BLAST_VERSION
 
 #OrthoMCL
-MCL = SOFTWARE_DIR + 'mcl-12-135/src/shmcl/mcl'
-ORTHOMCL_DIR = SOFTWARE_DIR + 'orthomclSoftware-v2.0.7/bin/'
+MCL = SOFTWARE_DIR + 'mcl'
+ORTHOMCL_DIR = SOFTWARE_DIR + ''
 ORTHOMCL_INSTALL_SCHEMA = ORTHOMCL_DIR + 'orthomclInstallSchema'
 ORTHOMCL_ADJUST_FASTA = ORTHOMCL_DIR + 'orthomclAdjustFasta'
 ORTHOMCL_FILTER_FASTA = ORTHOMCL_DIR + 'orthomclFilterFasta'
@@ -43,19 +43,19 @@ ORTHOMCL_DUMP_PAIRS_FILES = ORTHOMCL_DIR + 'orthomclDumpPairsFiles'
 ORTHOMCL_MCL_TO_GROUPS = ORTHOMCL_DIR + 'orthomclMclToGroups'
 
 #Align & Trim
-TRANSLATORX = SOFTWARE_DIR + 'translatorx/translatorx_v1.1.pl'
+TRANSLATORX = SOFTWARE_DIR + 'translatorx_v1.1.pl'
 
 #Concatemer tree
-PHYLIP_DIR = SOFTWARE_DIR + 'phylip-3.69/'
-DNADIST = PHYLIP_DIR + 'exe/dnadist'
-NEIGHBOR = PHYLIP_DIR + 'exe/neighbor'
+PHYLIP_DIR = SOFTWARE_DIR + ''
+DNADIST = PHYLIP_DIR + 'dnadist'
+NEIGHBOR = PHYLIP_DIR + 'neighbor'
 
 #Recombination
-PHIPACK = SOFTWARE_DIR + 'PhiPack/Phi'
+PHIPACK = SOFTWARE_DIR + 'Phi'
 
 #Calculation
-PAML_DIR = SOFTWARE_DIR + 'paml4.7/'
-CODEML = PAML_DIR + 'bin/codeml'
+PAML_DIR = SOFTWARE_DIR + ''
+CODEML = PAML_DIR + 'codeml'
 
 
 def _call_program(*command):
